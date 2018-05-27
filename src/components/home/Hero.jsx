@@ -15,9 +15,9 @@ const Hero = () => (
       </p>
       <p>Click one of the badges to find out more.</p>
       <Badges badges={[
-        { colour: 'yellow', icon: 'accessible_forward' },
+        { colour: 'yellow', icon: 'hearing' },
         { colour: 'red', icon: 'visibility_off' },
-        { colour: 'blue', icon: 'hearing' },
+        { colour: 'blue', icon: 'accessible_forward' },
       ]}
       />
     </section>

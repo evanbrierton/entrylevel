@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+
+import NavLinks from './NavLinks';
 
 import '../stylesheets/Navbar.css';
-
 
 class Navbar extends Component {
   state = {
@@ -29,17 +29,7 @@ class Navbar extends Component {
           <button className="red badge" />
           <button className="blue badge" />
         </div>
-        <ul>
-          <li>
-            <NavLink to="/" className="link">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/" className="link">Review</NavLink>
-          </li>
-          <li>
-            <NavLink to="/register" className="link">Register</NavLink>
-          </li>
-        </ul>
+        <NavLinks />
         <form>
           <label htmlFor="search">
             <input type="text" id="search" />
