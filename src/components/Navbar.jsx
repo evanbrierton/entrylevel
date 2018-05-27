@@ -6,9 +6,9 @@ import '../stylesheets/Navbar.css';
 const Navbar = () => (
   <nav className="Navbar">
     <div className="badges">
-      <div className="yellow badge" />
-      <div className="red badge" />
-      <div className="blue badge" />
+      <button className="yellow badge" />
+      <button className="red badge" />
+      <button className="blue badge" />
     </div>
     <ul>
       <NavLink to="/" className="link">Home</NavLink>

@@ -1,0 +1,23 @@
+import React from 'react';
+
+import '../stylesheets/Hero.css';
+
+const Hero = () => (
+  <section className="Hero">
+    <section className="content">
+      <h1>Entry Level</h1>
+      <p>
+        Entry level helps people find accessible establishments and encourages positive
+        improvements to those establishments.
+      </p>
+      <p>Click one of the badges to find out more.</p>
+      <div className="Badges">
+        <div className="yellow badge" />
+        <div className="red badge" />
+        <div className="blue badge" />
+      </div>
+    </section>
+  </section>
+);
+
+export default Hero;

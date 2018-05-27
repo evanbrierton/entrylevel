@@ -1,0 +1,37 @@
+.Hero {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 75em;
+  background-image: url('./img/background.png');
+}
+
+.Hero .content {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding-bottom: 2em;
+}
+
+.Hero h1 {
+  font-size: 8em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.Hero p {
+  font-size: 2em;
+  font-weight: 200;
+  width: 70%
+}
+
+.Hero .badge {
+  width: 10em;
+  height: 10em;
+  display: inline-block;
+  margin-right: 2em;
+  border-radius: 1em;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
