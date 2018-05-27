@@ -30,12 +30,20 @@ class Navbar extends Component {
           <button className="blue badge" />
         </div>
         <ul>
-          <NavLink to="/" className="link">Home</NavLink>
-          <NavLink to="/" className="link">Review</NavLink>
-          <NavLink to="/" className="link">Register</NavLink>
+          <li>
+            <NavLink to="/" className="link">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/" className="link">Review</NavLink>
+          </li>
+          <li>
+            <NavLink to="/register" className="link">Register</NavLink>
+          </li>
         </ul>
         <form>
-          <input type="text" />
+          <label htmlFor="search">
+            <input type="text" id="search" />
+          </label>
         </form>
         <i className="material-icons">search</i>
       </nav>

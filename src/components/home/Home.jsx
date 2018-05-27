@@ -2,7 +2,7 @@ import React from 'react';
 
 import Hero from './Hero';
 
-import '../stylesheets/Home.css';
+import '../../stylesheets/home/Home.css';
 
 const Home = () => (
   <main className="Home">

@@ -1,0 +1,28 @@
+.Hero {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 75em;
+  background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+}
+
+.Hero .content {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  padding-bottom: 2em;
+}
+
+.Hero h1 {
+  font-size: 8em;
+  font-weight: 300;
+  margin: 0;
+}
+
+.Hero p {
+  font-size: 2em;
+  font-weight: 200;
+  width: 70%
+}

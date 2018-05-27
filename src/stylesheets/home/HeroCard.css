@@ -1,0 +1,19 @@
+.HeroCard {
+  background-color: #fff;
+  width: 50vw;
+  height: 20em;
+  min-height: fit-content;
+  text-align: center;
+  margin-top: 25em;
+  border-radius: 0.3em;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.HeroCard h2 {
+  font-size: 3em;
+  font-weight: 100;
+  margin: 0;
+  margin-top: 0.3em;
+  text-transform: uppercase;
+  color: #757575;
+}
