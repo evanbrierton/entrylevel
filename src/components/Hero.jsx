@@ -12,9 +12,15 @@ const Hero = () => (
       </p>
       <p>Click one of the badges to find out more.</p>
       <div className="Badges">
-        <div className="yellow badge" />
-        <div className="red badge" />
-        <div className="blue badge" />
+        <button className="yellow badge">
+          <i className="material-icons">accessible_forward</i>
+        </button>
+        <button className="red badge">
+          <i className="material-icons">visibility_off</i>
+        </button>
+        <button className="blue badge">
+          <i className="material-icons">hearing</i>
+        </button>
       </div>
     </section>
   </section>

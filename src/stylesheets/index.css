@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  padding-top: 6em;
+}
+
 .yellow {
   background-color: #f1c40f;
 }
