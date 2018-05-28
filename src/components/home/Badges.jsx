@@ -10,7 +10,9 @@ const Badges = ({ badges }) => (
 );
 
 Badges.propTypes = {
-  badges: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  badges: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.oneOfType([
+    PropTypes.string, PropTypes.number,
+  ]))).isRequired,
 };
 
 export default Badges;

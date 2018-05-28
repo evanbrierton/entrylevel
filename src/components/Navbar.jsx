@@ -13,9 +13,13 @@ class Navbar extends Component {
     window.addEventListener('scroll', this.scroll);
   }
 
+  componentWillUnmount = () => {
+    window.removeEventListener('scroll', this.scroll);
+  }
+
   scroll = () => {
     if (window.pageYOffset && this.state.shadow !== true) this.setState({ shadow: true });
-    if (!window.pageYOffset) this.setState({ shadow: false });
+    else if (!window.pageYOffset) this.setState({ shadow: false });
   };
 
   render() {
@@ -32,10 +36,10 @@ class Navbar extends Component {
         <NavLinks />
         <form>
           <label htmlFor="search">
-            <input type="text" id="search" />
+            <input type="text" id="search" placeholder="Search..." />
           </label>
+          <button type="submit"><i className="material-icons">search</i></button>
         </form>
-        <i className="material-icons">search</i>
       </nav>
     );
   }

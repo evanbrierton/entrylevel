@@ -9,7 +9,7 @@ const NavLinks = () => (
       <NavLink to="/" className="link">Home</NavLink>
     </li>
     <li>
-      <NavLink to="/" className="link">Review</NavLink>
+      <NavLink to="/review" className="link">Review</NavLink>
     </li>
     <li>
       <NavLink to="/register" className="link">Register</NavLink>

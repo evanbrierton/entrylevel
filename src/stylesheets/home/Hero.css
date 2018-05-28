@@ -3,16 +3,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 75em;
+  padding-bottom: 36em;
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: -7px -705px;
 }
 
 .Hero .content {
   display: flex;
   flex-direction: column;
   width: 70vw;
-  padding-bottom: 2em;
 }
 
 .Hero h1 {
@@ -21,8 +25,9 @@
   margin: 0;
 }
 
-.Hero p {
+.Hero .content > p {
   font-size: 2em;
   font-weight: 200;
-  width: 70%
+  width: 70%;
+  color: #757575;
 }

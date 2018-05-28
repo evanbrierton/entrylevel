@@ -1,11 +1,11 @@
 .Navbar {
   display: flex;
-  padding: 0.7em 1em;
+  height: 95px;
+  padding: 0 1em;
   align-items: center;
   justify-content: flex-start;
   width: 100%;
   position: fixed;
-  z-index: 1;
   background-color: #fff;
 }
 
@@ -36,8 +36,10 @@
 
 .Navbar form {
    margin-left: auto;
-   width: 200px;
+   width: 300px;
    height: 2em;
+   display: flex;
+   justify-content: space-between;
 }
 
 .Navbar input {

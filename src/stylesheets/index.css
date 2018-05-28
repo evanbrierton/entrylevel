@@ -12,6 +12,12 @@ main {
   padding-top: 6em;
 }
 
+button {
+  outline: none;
+  border: none;
+  background: none;
+}
+
 .yellow {
   background-color: #f1c40f;
 }
