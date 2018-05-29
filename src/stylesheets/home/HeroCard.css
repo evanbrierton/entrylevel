@@ -1,8 +1,8 @@
 .HeroCard {
   background-color: #fff;
-  max-width: 50vw;
+  max-width: 100%;
+  width: 100vw;
   height: 20em;
-  min-width: fit-content;
   min-height: fit-content;
   text-align: center;
   margin-top: 25em;
@@ -17,20 +17,24 @@
   margin-top: 0.3em;
   text-transform: uppercase;
   color: #757575;
-  padding-right: 2em;
 }
 
 .HeroCard ul {
   list-style: none;
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
+  height: 80%;
+  min-height: fit-content;
+  padding: 0;
 }
 
 .HeroCard li {
+  flex-basis: 30%;
   margin: 0 3em;
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: fit-content;
 }
 
 .HeroCard p {
@@ -44,9 +48,43 @@
 
 .HeroCard img {
   display: block;
-  max-width: 100%;
+  max-width: 500px;
   max-height: 50%;
   width: auto;
   height: auto;
   margin-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .HeroCard {
+    margin-top: 15em;
+  }
+  .HeroCard ul {
+    padding-top: 1em;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .HeroCard p {
+    font-size: 1em;
+    height: 128px;
+  }
+
+  .HeroCard h2 {
+    font-size: 2em;
+    padding: 0;
+  }
+
+  .HeroCard li {
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .HeroCard p {
+    font-size: 0.8em;
+  }
+    .HeroCard {
+      margin-top: 8em;
+    }
 }

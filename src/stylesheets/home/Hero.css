@@ -6,11 +6,12 @@
   padding-bottom: 36em;
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .parallax {
-  background-attachment: fixed;
-  background-position: -7px -705px;
+  background-attachment: fixed !important;
+  background-position-y: -690px;
 }
 
 .Hero .content {
@@ -30,4 +31,49 @@
   font-weight: 200;
   width: 70%;
   color: #757575;
+}
+
+@media screen and (max-width: 1250px) {
+  .Hero {
+   background-position-y: 300px;
+  }
+  .parallax {
+    background-position-y: -403px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Hero .content>p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .Hero {
+    text-align: center;
+    background-position: 0 100px;
+  }
+   .parallax {
+     background-position-y: -100px;
+   }
+}
+
+@media screen and (max-width: 530px) {
+  .Hero {
+    background-position: 0 250px;
+    background-size: 1000px;
+  }
+ .Hero h1 {
+   font-size: 5em;
+ }
+  .Hero .content>p {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Hero {
+    background-position: 0 300px;
+    background-size: 1000px;
+  }
 }

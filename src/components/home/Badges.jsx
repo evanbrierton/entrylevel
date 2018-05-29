@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import Badge from './Badge';
 
+import '../../stylesheets/home/Badges.css';
+
 const Badges = ({ badges }) => (
   <div className="Badges">
     {badges.map(b => <Badge {...b} />)}

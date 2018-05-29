@@ -19,7 +19,7 @@ class Hero extends Component {
   }
 
   scroll = () => {
-    if (window.pageYOffset > 800 && window.pageYOffset < 1500) {
+    if (window.pageYOffset > 800 && window.pageYOffset < 1500 && window.matchMedia('(min-width: 900px)').matches) {
       this.setState({ parallax: true });
     } else {
       this.setState({ parallax: false });

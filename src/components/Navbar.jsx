@@ -18,8 +18,11 @@ class Navbar extends Component {
   }
 
   scroll = () => {
-    if (window.pageYOffset && this.state.shadow !== true) this.setState({ shadow: true });
-    else if (!window.pageYOffset) this.setState({ shadow: false });
+    if (window.pageYOffset &&
+      this.state.shadow !== true &&
+      window.matchMedia('(min-width: 900px)').matches) {
+      this.setState({ shadow: true });
+    } else if (!window.pageYOffset) this.setState({ shadow: false });
   };
 
   render() {
