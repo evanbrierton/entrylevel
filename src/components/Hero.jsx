@@ -38,7 +38,7 @@ const Hero = () => {
         <p>Click one of the badges to find out more.</p>
         <Badges icon styles={{ width: '10em', height: '10em', margin: '1em' }} />
       </section>
-      <Card header="What's New?" cardItems={cardItems} />
+      <Card defer header="What's New?" cardItems={cardItems} />
     </section>
   );
 };
