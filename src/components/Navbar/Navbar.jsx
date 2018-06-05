@@ -29,8 +29,8 @@ class Navbar extends Component {
         <Badges styles={{ width: '2.5em', height: '2.5em', margin: '0.2em' }} icon={false} />
         <NavLinks />
         <form>
-          <label htmlFor="search">
-            <input type="text" id="search" placeholder="Search..." />
+          <label htmlFor="search" aria-label="Search">
+            <input type="text" id="search" placeholder="Search..." required />
           </label>
           <button type="submit"><i className="material-icons">search</i></button>
         </form>

@@ -8,6 +8,7 @@ import App from './components/App';
 import config from './firebaseconfig';
 import registerServiceWorker from './registerServiceWorker';
 
+import './stylesheets/reset.css';
 import './stylesheets/index.css';
 
 firebase.initializeApp(config);
