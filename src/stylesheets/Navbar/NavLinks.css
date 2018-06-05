@@ -5,22 +5,6 @@
   padding-left: 2em;
 }
 
-.NavLinks .link {
-  font-weight: 100;
-  font-size: 2em;
-  text-decoration: none;
-  color: #757575;
-  margin: 0 20px;
-  outline: none;
-  transition: color 0.2s ease-in;
-}
-
-.NavLinks .link:hover,
-.NavLinks .link:focus {
-  color: #3498db;
-  border-bottom: 1px solid #3498db;
-}
-
 @media screen and (min-width: 900px) {
   .NavLinks {
     padding-left: 0.2em;

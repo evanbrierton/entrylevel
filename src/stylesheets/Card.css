@@ -1,4 +1,4 @@
-.HeroCard {
+.Card {
   background-color: #fff;
   max-width: 100%;
   width: 100vw;
@@ -10,7 +10,7 @@
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
-.HeroCard h2 {
+.Card h2 {
   font-size: 3em;
   font-weight: 100;
   margin: 0;
@@ -19,7 +19,7 @@
   color: #757575;
 }
 
-.HeroCard ul {
+.Card ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -28,63 +28,44 @@
   padding: 0;
 }
 
-.HeroCard li {
-  flex-basis: 30%;
-  margin: 0 3em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-height: fit-content;
-}
-
-.HeroCard p {
-  text-align: center;
-  display: inline-block;
-  color: #757575;
-  font-weight: 300;
-  font-size: 1.8em;
-  margin-top: auto;
-}
-
-.HeroCard img {
-  display: block;
-  max-width: 500px;
-  max-height: 50%;
-  width: auto;
-  height: auto;
-  margin-bottom: 1em;
-}
-
 @media screen and (max-width: 900px) {
-  .HeroCard {
+  .Card {
     margin-top: 15em;
   }
-  .HeroCard ul {
+  .Card ul {
     padding-top: 1em;
     justify-content: space-between;
     padding-left: 0;
   }
 
-  .HeroCard p {
+  .Card p {
     font-size: 1em;
     height: 128px;
   }
 
-  .HeroCard h2 {
+  .Card h2 {
     font-size: 2em;
     padding: 0;
   }
 
-  .HeroCard li {
+  .Card li {
     margin: 0 1em;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .HeroCard p {
-    font-size: 0.8em;
+  .Card p {
+    font-size: 2em;
+    max-height: fit-content;
+    margin-top: 1em;
   }
-    .HeroCard {
-      margin-top: 8em;
-    }
+  .Card {
+    margin-top: 8em;
+  }
+  .Card ul {
+    flex-direction: column;
+  }
+  .Card li {
+    margin-bottom: 2em;
+  }
 }

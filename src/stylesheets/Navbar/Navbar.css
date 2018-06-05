@@ -2,7 +2,6 @@
   display: flex;
   height: 95px;
   padding: 0 1em;
-
   align-items: center;
   justify-content: flex-start;
   position: fixed;
@@ -10,19 +9,7 @@
   max-width: 100%;
   min-height: fit-content;
   background-color: #fff;
-}
-
-.Navbar .badges {
-  display: flex;
-  align-items: center;
-}
-
-.Navbar .badge {
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 5px;
-  margin: 0 0.2em;
-  outline: none;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.2);
 }
 
 .Navbar i {

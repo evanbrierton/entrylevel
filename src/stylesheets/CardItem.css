@@ -1,0 +1,26 @@
+.CardItem {
+  flex-basis: 30%;
+  margin: 0 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: fit-content;
+}
+
+.CardItem p {
+  text-align: center;
+  display: inline-block;
+  color: #757575;
+  font-weight: 300;
+  font-size: 1.8em;
+  margin-top: auto;
+}
+
+.CardItem img {
+  display: block;
+  max-width: 100%;
+  max-height: 50%;
+  width: auto;
+  height: auto;
+  margin-bottom: 1em;
+}

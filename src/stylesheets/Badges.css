@@ -1,0 +1,14 @@
+.Badges {
+  display: flex;
+  min-width: 5%;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 915px) {
+  .Badges {
+    align-self: center;
+    justify-content: center;
+    width: 90vw;
+  }
+}
+

@@ -3,27 +3,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 36em;
+  padding-bottom: 40em;
+  margin-bottom: 3em;
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
-  background-position: right;
+  background-position-y: -100px;
 }
 
 .parallax {
-  background-attachment: fixed !important;
-  background-position-y: -690px;
+  background-attachment: fixed;
 }
 
 .Hero .content {
   display: flex;
   flex-direction: column;
   width: 70vw;
-}
-
-.Hero h1 {
-  font-size: 8em;
-  font-weight: 300;
-  margin: 0;
 }
 
 .Hero .content > p {
@@ -33,12 +27,10 @@
   color: #757575;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 1921px) {
   .Hero {
-   background-position-y: 300px;
-  }
-  .parallax {
-    background-position-y: -403px;
+    background-position: right -250px;
+    background-size: cover;
   }
 }
 
@@ -48,32 +40,49 @@
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .Hero {
+   background-position-y: 50px;
+  }
+}
+
 @media screen and (max-width: 915px) {
   .Hero {
     text-align: center;
-    background-position: 0 100px;
+    background-position-y: 100px;
   }
-   .parallax {
-     background-position-y: -100px;
-   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 500px) {
   .Hero {
-    background-position: 0 250px;
+    background-position-y: 250px;
     background-size: 1000px;
   }
- .Hero h1 {
+  .Hero .content h1 {
    font-size: 5em;
  }
-  .Hero .content>p {
+  .Hero .content > p {
     font-size: 1.5em;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 440px) {
   .Hero {
-    background-position: 0 300px;
-    background-size: 1000px;
+    background-position-y: 400px;
   }
+}
+
+@media screen and (max-width: 365px) {
+  .Hero {
+    background-position-y: 450px;
+  }
+  .Hero .content h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 290px) {
+    .Hero {
+      background-position-y: 600px;
+    }
 }
