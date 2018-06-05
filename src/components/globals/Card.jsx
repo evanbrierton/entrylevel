@@ -5,18 +5,18 @@ import CardItem from './CardItem';
 
 import '../../stylesheets/globals/Card.css';
 
-const Card = ({ header, cardItems }) => (
+const Card = ({ header, items }) => (
   <section className="Card">
     <h2>{header}</h2>
     <ul>
-      {cardItems.map(item => <CardItem item={item} key={item.key} />)}
+      {items.map(item => <CardItem item={item} key={item.key} />)}
     </ul>
   </section>
 );
 
 Card.propTypes = {
   header: PropTypes.string.isRequired,
-  cardItems: PropTypes
+  items: PropTypes
     .arrayOf(PropTypes.objectOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])))
     .isRequired,
 };

@@ -1,8 +1,8 @@
 export const card = {
 
-  cardHeader: 'What\'s New?',
+  header: 'What\'s New?',
 
-  cardItems: [{
+  items: [{
     href: 'http://www.hackaccessdublin.ie/',
     src: 'https://firebasestorage.googleapis.com/v0/b/entrylevel-ie.appspot.com/o/logo-placeholder.png?alt=media&token=5a1e190f-b16f-4be0-961b-0736e501ec8f',
     alt: 'Lorem Ipsum',
