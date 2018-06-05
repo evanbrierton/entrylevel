@@ -1,88 +1,56 @@
-.Hero {
+.Background {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 40em;
   margin-bottom: 3em;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/entrylevel-ie.appspot.com/o/background.png?alt=media&token=a7dc2283-2938-43a4-9614-ff23fb76a2fd');
   background-repeat: no-repeat;
   background-position-y: -100px;
 }
 
-.parallax {
-  background-attachment: fixed;
-}
-
-.Hero .content {
-  display: flex;
-  flex-direction: column;
-  width: 70vw;
-}
-
-.Hero .content > p {
-  font-size: 2em;
-  font-weight: 200;
-  width: 70%;
-  color: #757575;
-}
 
 @media screen and (min-width: 1921px) {
-  .Hero {
+  .Background {
     background-position: right -250px;
     background-size: cover;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .Hero .content>p {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 1250px) {
-  .Hero {
-   background-position-y: 50px;
+  .Background {
+    background-position-y: 50px;
   }
 }
 
 @media screen and (max-width: 915px) {
-  .Hero {
+  .Background {
     text-align: center;
     background-position-y: 100px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .Hero {
+  .Background {
     background-position-y: 250px;
     background-size: 1000px;
-  }
-  .Hero .content h1 {
-   font-size: 5em;
- }
-  .Hero .content > p {
-    font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 440px) {
-  .Hero {
+  .Background {
     background-position-y: 400px;
   }
 }
 
 @media screen and (max-width: 365px) {
-  .Hero {
+  .Background {
     background-position-y: 450px;
-  }
-  .Hero .content h1 {
-    font-size: 4em;
   }
 }
 
 @media screen and (max-width: 290px) {
-    .Hero {
-      background-position-y: 600px;
-    }
+  .Background {
+    background-position-y: 600px;
+  }
 }

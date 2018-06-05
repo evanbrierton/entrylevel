@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 import Badge from './Badge';
 
-import '../stylesheets/Badges.css';
+import '../../stylesheets/globals/Badges.css';
 
-const Badges = ({ badges, icon, styles }) => (
+const Badges = ({ badges, styles, button }) => (
   <div className="Badges">
-    {badges.map(b => <Badge {...b} styles={styles} icon={!icon ? icon : b.icon} />)}
+    {badges.map(b => <Badge {...b} styles={styles} button={button} />)}
   </div>
 );
 
@@ -16,7 +16,7 @@ Badges.propTypes = {
     PropTypes.string, PropTypes.number,
   ]))),
   styles: PropTypes.objectOf(PropTypes.string),
-  icon: PropTypes.bool.isRequired,
+  button: PropTypes.bool,
 };
 
 Badges.defaultProps = {
@@ -32,6 +32,7 @@ Badges.defaultProps = {
     },
   ],
   styles: { width: '10em', height: '10em' },
+  button: true,
 };
 
 export default Badges;

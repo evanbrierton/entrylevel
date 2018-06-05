@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '../stylesheets/CardItem.css';
+import '../../stylesheets/globals/CardItem.css';
 
 const CardItem = ({ item }) => {
   const {
@@ -18,7 +18,7 @@ const CardItem = ({ item }) => {
 };
 
 CardItem.propTypes = {
-  item: PropTypes.objectOf(PropTypes.string).isRequired,
+  item: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])).isRequired,
 };
 
 export default CardItem;
