@@ -1,0 +1,52 @@
+.Background {
+  padding-bottom: 40em;
+  margin-bottom: 3em;
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+}
+
+
+@media screen and (min-width: 1921px) {
+  .Background {
+    background-position: right -250px;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .Background {
+    background-position-y: 50px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .Background {
+    text-align: center;
+    background-position-y: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Background {
+    background-position-y: 250px;
+    background-size: 1000px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .Background {
+    background-position-y: 400px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .Background {
+    background-position-y: 450px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .Background {
+    background-position-y: 600px;
+  }
+}

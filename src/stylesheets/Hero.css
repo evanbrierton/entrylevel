@@ -1,0 +1,17 @@
+.Hero {
+  width: 70vw;
+  text-align: start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 500px) {
+  .Hero h1 {
+   font-size: 5em;
+ }
+}
+
+@media screen and (max-width: 365px) {
+  .Hero h1 {
+    font-size: 4em;
+  }
+}

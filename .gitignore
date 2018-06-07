@@ -23,6 +23,7 @@ yarn-error.log*
 
 #eslint
 .eslintrc.json
+.eslintignore
 
 #firebase
 .firebaserc

@@ -10,12 +10,17 @@
       improvements to those establishments."
     >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <noscript>
+      <link rel="stylesheet" href="noscript.css">
+    </noscript>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -29,7 +34,14 @@
   </head>
   <body>
     <noscript>
-      You need to enable JavaScript to run this app.
+      <section class="noscript">
+        <img src="logo.png" alt="Entry Level Logo">
+        <h3>Entry Level does not work without JavaScript enabled.</h3>
+        <p>Enabling JavaScript will allow you to use our platform and improve your experience on the web.</p>
+        <p>
+          <a class="link" href="https://www.enable-javascript.com/" target="_blank" rel="noopener noreferrer">Click here to learn how.</a>
+        </p>
+      </section>
     </noscript>
     <div id="root"></div>
   </body>

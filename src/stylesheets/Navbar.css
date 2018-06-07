@@ -1,0 +1,23 @@
+.Navbar {
+  display: flex;
+  height: 95px;
+  padding: 0 1em;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  width: 100vw;
+  max-width: 100%;
+  min-height: fit-content;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+@media screen and (max-width: 900px) {
+  .Navbar {
+    padding: 1em 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+  }
+}
