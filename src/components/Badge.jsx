@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, string, oneOfType, objectOf } from 'prop-types';
 
-import '../stylesheets/Badge.css';
+import '../styles/Badge.css';
 
 const Badge = ({
   colour, icon, styles, button,
