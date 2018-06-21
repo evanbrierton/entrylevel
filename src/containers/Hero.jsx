@@ -1,9 +1,9 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 
-import Badges from './Badges';
+import Badges from '../components/Badges';
 
-import '../stylesheets/Hero.css';
+import '../styles/Hero.css';
 
 const Hero = ({
   header, p1, p2, badges,

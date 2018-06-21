@@ -3,7 +3,7 @@ import { bool, number, string, arrayOf, objectOf, shape } from 'prop-types';
 
 import Badge from './Badge';
 
-import '../stylesheets/Badges.css';
+import '../styles/Badges.css';
 
 const Badges = ({ badges, styles, button }) => (
   <div className="Badges">

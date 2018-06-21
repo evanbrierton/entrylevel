@@ -1,9 +1,9 @@
 import React from 'react';
 import { string, arrayOf, shape } from 'prop-types';
 
-import SocialLink from './SocialLink';
+import SocialLink from '../components/SocialLink';
 
-import '../stylesheets/SocialLinks.css';
+import '../styles/SocialLinks.css';
 
 const SocialLinks = ({ links }) => (
   <ul className="SocialLinks">
@@ -16,4 +16,3 @@ SocialLinks.propTypes = {
 };
 
 export default SocialLinks;
-

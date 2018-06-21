@@ -1,7 +1,7 @@
 import React from 'react';
 import { number, string, shape } from 'prop-types';
 
-import '../stylesheets/CardItem.css';
+import '../styles/CardItem.css';
 
 const CardItem = ({ item }) => {
   const {

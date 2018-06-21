@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../stylesheets/NavForm.css';
+import '../styles/NavForm.css';
 
 const NavForm = () => (
   <form className="NavForm">

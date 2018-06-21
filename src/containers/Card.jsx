@@ -1,9 +1,9 @@
 import React from 'react';
 import { number, string, arrayOf, shape } from 'prop-types';
 
-import CardItem from './CardItem';
+import { CardItem } from '../components';
 
-import '../stylesheets/Card.css';
+import '../styles/Card.css';
 
 const Card = ({ header, items }) => (
   <section className="Card">

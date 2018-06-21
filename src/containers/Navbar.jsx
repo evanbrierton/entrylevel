@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
-import Badges from './Badges';
-import NavLinks from './NavLinks';
-import NavForm from './NavForm';
+import Badges from '../components/Badges';
+import { NavForm, NavLinks } from '../components';
 
-import '../stylesheets/Navbar.css';
+import '../styles/Navbar.css';
 
 class Navbar extends Component {
   state = { shadow: false }

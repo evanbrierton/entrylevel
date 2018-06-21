@@ -1,4 +1,4 @@
-const socialLinks = [
+export const socialLinks = [
   { href: 'linkedin.com', icon: 'linkedin' },
   { href: 'facebook.com', icon: 'facebook' },
   { href: 'twitter.com', icon: 'twitter' },

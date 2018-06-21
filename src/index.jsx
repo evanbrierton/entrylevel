@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import firebase from 'firebase';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import App from './components/App';
+import { App } from './containers';
 
 import config from './firebaseconfig';
 import registerServiceWorker from './registerServiceWorker';
 
-import './stylesheets/socialmedia.css';
+import './styles/socialmedia.css';
 
 firebase.initializeApp(config);
 

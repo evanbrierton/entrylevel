@@ -1,7 +1,7 @@
 import React from 'react';
 import { string, node, arrayOf } from 'prop-types';
 
-import '../stylesheets/Background.css';
+import '../styles/Background.css';
 
 const Background = ({ backgroundImage, children }) => (
   <section className="Background" style={{ backgroundImage }}>

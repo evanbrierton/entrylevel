@@ -1,10 +1,10 @@
 import React from 'react';
 
-import SocialLinks from './SocialLinks';
+import { SocialLinks } from '../components';
 
-import socialLinks from './data/Footer';
+import { socialLinks } from '../data';
 
-import '../stylesheets/Footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => (
   <footer className="Footer">

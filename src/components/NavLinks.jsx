@@ -2,9 +2,9 @@ import React from 'react';
 
 import NavLinkItem from './NavLinkItem';
 
-import links from './data/Navbar';
+import { links } from '../data';
 
-import '../stylesheets/NavLinks.css';
+import '../styles/NavLinks.css';
 
 const NavLinks = () => (
   <ul className="NavLinks">

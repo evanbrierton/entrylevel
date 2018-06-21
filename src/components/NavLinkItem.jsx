@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { string } from 'prop-types';
 
-import '../stylesheets/NavLinkItem.css';
+import '../styles/NavLinkItem.css';
 
 const NavLinkItem = ({ href, text }) => (
   <li className="NavLink">
