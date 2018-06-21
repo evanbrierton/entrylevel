@@ -50,8 +50,34 @@ screen and (pointer: fine) {
 }
 
 @media screen and (max-width: 600px) {
-  .Badge {
-    width: 6em;
-    height: 6em;
+  .Badge.button {
+    width: 6em !important;
+    height: 6em !important;
+    margin: 0.5em !important;
+  }
+  .Badge i {
+    font-size: 5em; 
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Badge.button {
+    width: 5em !important;
+    height: 5em !important;
+    margin: 0.3em !important;
+  }
+  .Badge i {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .Badge.button {
+    width: 4em !important;
+    height: 4em !important;
+    margin: 0.2em !important;
+  }
+  .Badge i {
+    font-size: 3.5em;
   }
 }

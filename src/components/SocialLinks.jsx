@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, arrayOf, shape } from 'prop-types';
 
 import SocialLink from './SocialLink';
 
@@ -12,7 +12,7 @@ const SocialLinks = ({ links }) => (
 );
 
 SocialLinks.propTypes = {
-  links: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
+  links: arrayOf(shape({ href: string.isRequired, icon: string.isRequired })).isRequired,
 };
 
 export default SocialLinks;

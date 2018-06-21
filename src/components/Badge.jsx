@@ -1,12 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { bool, string, oneOfType, objectOf } from 'prop-types';
 
 import '../stylesheets/Badge.css';
 
 const Badge = ({
   colour, icon, styles, button,
 }) => (
-  <div className={`${colour} Badge`} style={styles}>
+  <div className={`${colour} ${button ? 'button' : null} Badge`} style={styles}>
     {button ? (
       <button>
         <i className="material-icons">{icon}</i>
@@ -17,10 +17,10 @@ const Badge = ({
 );
 
 Badge.propTypes = {
-  colour: PropTypes.string.isRequired,
-  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]).isRequired,
-  styles: PropTypes.objectOf(PropTypes.string).isRequired,
-  button: PropTypes.bool.isRequired,
+  colour: string.isRequired,
+  icon: oneOfType([string, bool]).isRequired,
+  styles: objectOf(string).isRequired,
+  button: bool.isRequired,
 };
 
 export default Badge;

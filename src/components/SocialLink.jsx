@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 import '../stylesheets/SocialLink.css';
 
@@ -12,8 +12,8 @@ const SocialLink = ({ href, icon }) => (
 );
 
 SocialLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  href: string.isRequired,
+  icon: string.isRequired,
 };
 
 export default SocialLink;

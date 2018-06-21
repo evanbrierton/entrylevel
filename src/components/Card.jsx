@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { number, string, arrayOf, shape } from 'prop-types';
 
 import CardItem from './CardItem';
 
@@ -15,10 +15,14 @@ const Card = ({ header, items }) => (
 );
 
 Card.propTypes = {
-  header: PropTypes.string.isRequired,
-  items: PropTypes
-    .arrayOf(PropTypes.objectOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])))
-    .isRequired,
+  header: string.isRequired,
+  items: arrayOf(shape({
+    alt: string.isRequired,
+    caption: string.isRequired,
+    href: string.isRequired,
+    src: string.isRequired,
+    key: number.isRequired,
+  })).isRequired,
 };
 
 export default Card;

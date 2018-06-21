@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 import '../stylesheets/NavLinkItem.css';
 
@@ -11,8 +11,8 @@ const NavLinkItem = ({ href, text }) => (
 );
 
 NavLinkItem.propTypes = {
-  href: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  href: string.isRequired,
+  text: string.isRequired,
 };
 
 export default NavLinkItem;

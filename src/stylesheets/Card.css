@@ -24,7 +24,6 @@
   display: flex;
   justify-content: space-around;
   height: fit-content;
-  min-height: 16em;
   padding: 0;
 }
 

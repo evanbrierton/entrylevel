@@ -26,6 +26,13 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  .Background {
+    text-align: center;
+    background-position-y: 150px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .Background {
     background-position-y: 250px;
@@ -33,20 +40,14 @@
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 400px) {
   .Background {
-    background-position-y: 400px;
+    background-position-y: 300px;
   }
 }
 
 @media screen and (max-width: 365px) {
   .Background {
-    background-position-y: 450px;
-  }
-}
-
-@media screen and (max-width: 290px) {
-  .Background {
-    background-position-y: 600px;
+    background-position-y: 320px;
   }
 }

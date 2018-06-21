@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { number, string, shape } from 'prop-types';
 
 import '../stylesheets/CardItem.css';
 
@@ -18,7 +18,13 @@ const CardItem = ({ item }) => {
 };
 
 CardItem.propTypes = {
-  item: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])).isRequired,
+  item: shape({
+    alt: string.isRequired,
+    caption: string.isRequired,
+    href: string.isRequired,
+    src: string.isRequired,
+    key: number.isRequired,
+  }).isRequired,
 };
 
 export default CardItem;

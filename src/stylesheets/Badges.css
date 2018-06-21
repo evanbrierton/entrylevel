@@ -12,3 +12,8 @@
   }
 }
 
+@media screen and (max-width: 540px) {
+  .Badges {
+    width: 100vw;
+  }
+}

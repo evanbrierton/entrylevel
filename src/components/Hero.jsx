@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { bool, string } from 'prop-types';
 
 import Badges from './Badges';
 
@@ -17,10 +17,10 @@ const Hero = ({
 );
 
 Hero.propTypes = {
-  header: PropTypes.string.isRequired,
-  p1: PropTypes.string.isRequired,
-  p2: PropTypes.string.isRequired,
-  badges: PropTypes.bool,
+  header: string.isRequired,
+  p1: string.isRequired,
+  p2: string.isRequired,
+  badges: bool,
 };
 
 Hero.defaultProps = {

@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { string, node, arrayOf } from 'prop-types';
 
 import '../stylesheets/Background.css';
 
@@ -9,15 +9,9 @@ const Background = ({ backgroundImage, children }) => (
   </section>
 );
 
-Background.propTypes = {
-  backgroundImage: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node),
-};
+Background.propTypes = { backgroundImage: string, children: arrayOf(node) };
 
-Background.defaultProps = {
-  backgroundImage: null,
-  children: null,
-};
+Background.defaultProps = { backgroundImage: null, children: null };
 
 export default Background;
 

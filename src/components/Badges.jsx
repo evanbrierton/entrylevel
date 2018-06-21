@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { bool, number, string, arrayOf, objectOf, shape } from 'prop-types';
 
 import Badge from './Badge';
 
@@ -7,16 +7,14 @@ import '../stylesheets/Badges.css';
 
 const Badges = ({ badges, styles, button }) => (
   <div className="Badges">
-    {badges.map(b => <Badge {...b} styles={styles} button={button} />)}
+    {badges.map(badge => <Badge {...badge} styles={styles} button={button} />)}
   </div>
 );
 
 Badges.propTypes = {
-  badges: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.oneOfType([
-    PropTypes.string, PropTypes.number,
-  ]))),
-  styles: PropTypes.objectOf(PropTypes.string),
-  button: PropTypes.bool,
+  badges: arrayOf(shape({ colour: string, icon: string, key: number })),
+  styles: objectOf(string),
+  button: bool,
 };
 
 Badges.defaultProps = {
