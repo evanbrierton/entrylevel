@@ -1,22 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import firebase from 'firebase';
-import { BrowserRouter as Router } from 'react-router-dom';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 import { App } from './containers';
 
-import config from './firebaseconfig';
+import config, { firestoreConfig } from './firebaseconfig';
 import registerServiceWorker from './registerServiceWorker';
 
+import './styles/index.css';
+import './styles/reset.css';
 import './styles/socialmedia.css';
 
 firebase.initializeApp(config);
+firebase.firestore().settings(firestoreConfig);
 
-ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
-  document.getElementById('root'),
-);
+ReactDOM.render(<App />, document.getElementById('root'));
 
 registerServiceWorker();

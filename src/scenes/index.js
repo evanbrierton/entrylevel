@@ -1,3 +1,4 @@
+import Establishment from './Establishment';
 import Home from './Home';
 
-export default Home;
+export { Establishment, Home };
