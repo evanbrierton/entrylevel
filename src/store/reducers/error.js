@@ -1,6 +1,6 @@
 import { ADD_ERROR, REMOVE_ERROR } from '../actionTypes';
 
-const error = (state = { error: null }, { type, message }) => {
+const error = (state = { error: { message: String() } }, { type, message }) => {
   switch (type) {
     case ADD_ERROR:
       return { ...state, message };

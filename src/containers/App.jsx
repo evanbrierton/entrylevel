@@ -8,6 +8,8 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Main from './Main';
 
+import '../styles/App.css';
+
 const App = () => (
   <Provider store={store}>
     <Router>

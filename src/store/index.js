@@ -13,4 +13,5 @@ const store = createStore(
 );
 /* eslint-enable */
 
+export * from './actions';
 export default store;
