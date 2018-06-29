@@ -1,0 +1,11 @@
+.EstablishmentBody {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-wrap: wrap;
+  width: 60vw;
+}
+
+.EstablishmentBody > * {
+  margin: 1em;
+}

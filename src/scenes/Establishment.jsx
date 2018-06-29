@@ -9,11 +9,14 @@ import { fetchEstablishmentAction } from '../store';
 import { MapContainer } from '../containers';
 import { EstablishmentProfile, EstablishmentPhotos, EstablishmentReviews } from '../components';
 
+import '../styles/Establishment.css';
+
 class Establishment extends Component {
   static propTypes = {
     match: match.isRequired,
     history: history.isRequired,
     fetchEstablishment: func.isRequired,
+    error: shape({ message: string }).isRequired,
     establishment: shape({
       name: string.isRequired,
       address: string.isRequired,
@@ -27,24 +30,28 @@ class Establishment extends Component {
       match: { params: { company, establishment } },
       fetchEstablishment,
     } = this.props;
-    this.props.history.push(`/establishments/${company}/${establishment}/profile`);
+    this.props.history.replace(`/establishments/${company}/${establishment}/profile`);
     fetchEstablishment(company, establishment);
   };
+
+  componentDidUpdate = () => {
+    const { error } = this.props;
+    if (error && error.code === 404) this.props.history.replace('/404');
+  }
 
   render = () => {
     const {
       establishment: {
-        coordinates, name, profileImage, address,
+        coordinates, name, profileImage, address, photos,
       },
       match: { params: { company, establishment } },
     } = this.props;
-
     return (
-      <main className="Establishment">
+      <main>
         <MapContainer location={coordinates} name={name} image={profileImage} pathname={`/establishments/${company}/${establishment}`} />
         <Switch>
           <Route exact path="/establishments/:company/:establishment/profile" render={() => <EstablishmentProfile address={address} />} />
-          <Route exact path="/establishments/:company/:establishment/photos" component={EstablishmentPhotos} />
+          <Route exact path="/establishments/:company/:establishment/photos" render={() => <EstablishmentPhotos photos={photos} />} />
           <Route exact path="/establishments/:company/:establishment/reviews" component={EstablishmentReviews} />
         </Switch>
       </main>
@@ -52,7 +59,7 @@ class Establishment extends Component {
   }
 }
 
-const mapStateToProps = ({ establishment }) => ({ establishment });
+const mapStateToProps = ({ establishment, error }) => ({ establishment, error });
 
 export default connect(
   mapStateToProps,

@@ -5,6 +5,7 @@ const defaultState = {
   address: String(),
   coordinates: { lat: Number(), lng: Number() },
   profileImage: String(),
+  photos: [String()],
 };
 
 const establishment = (state = defaultState, { type, establishmentData }) => {
