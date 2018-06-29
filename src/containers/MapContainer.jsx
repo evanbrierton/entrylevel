@@ -26,6 +26,7 @@ const MapContainer = ({
     </div>
     <NavLinks
       links={establishmentLinks.map(({ href, text }) => ({ href: pathname + href, text }))}
+      active
     />
   </div>
 );

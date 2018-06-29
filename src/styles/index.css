@@ -8,6 +8,10 @@ main {
   align-items: center;
 }
 
+i {
+  color: #757575;
+}
+
 h1 {
   font-size: 8em;
   font-weight: 300;

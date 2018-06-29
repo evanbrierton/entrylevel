@@ -4,26 +4,21 @@
 
 .SocialLink a i {
   font-size: 3em;
-  color: black;
   transition: color 200ms ease;
 }
 
-.SocialLink a .icon-linkedin:hover,
-.SocialLink a.linkedin:focus .icon-linkedin {
+.icon-linkedin {
   color: #0077b5;
 }
 
-.SocialLink a .icon-facebook:hover,
-.SocialLink a.facebook:focus .icon-facebook {
+.icon-facebook {
   color: #3b5998;
 }
 
-.SocialLink a .icon-twitter:hover,
-.SocialLink a.twitter:focus .icon-twitter {
+.icon-twitter {
   color: #1da1f2;
 }
 
-.SocialLink a .icon-youtube:hover,
-.SocialLink a.youtube:focus .icon-youtube {
+.icon-youtube {
   color: #ff0000;
 }

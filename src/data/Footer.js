@@ -1,8 +1,8 @@
 export const socialLinks = [
-  { href: 'linkedin.com', icon: 'linkedin' },
-  { href: 'facebook.com', icon: 'facebook' },
-  { href: 'twitter.com', icon: 'twitter' },
-  { href: 'youtube.com', icon: 'youtube' },
+  { href: 'https://linkedin.com/', icon: 'linkedin' },
+  { href: 'https://facebook.com/', icon: 'facebook' },
+  { href: 'https://twitter.com/', icon: 'twitter' },
+  { href: 'https://youtube.com/', icon: 'youtube' },
 ];
 
 export default socialLinks;

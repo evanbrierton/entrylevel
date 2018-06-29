@@ -5,7 +5,7 @@ import '../styles/SocialLink.css';
 
 const SocialLink = ({ href, icon }) => (
   <li className="SocialLink">
-    <a className={icon} href={href}>
+    <a className={icon} href={href} target="_blank" rel="noopener noreferrer">
       <i className={`icon-${icon}`} />
     </a>
   </li>

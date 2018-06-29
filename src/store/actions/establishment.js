@@ -9,7 +9,6 @@ const loadEstablishment = establishmentData => (
 export const fetchEstablishmentAction = (company, establishment) => (
   dispatch => (
     database('get', `companies/${company}/establishments/${establishment}`)
-      .then((res) => { console.log(res); return res; })
       .then(res => dispatch(loadEstablishment(res)))
       .catch(err => dispatch(addError(err)))
   )
