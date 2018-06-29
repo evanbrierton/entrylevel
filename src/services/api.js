@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+import firebase from '../firebase';
+
 export const database = (method, path, body) => (
   new Promise((resolve, reject) => (
     axios[method](
@@ -10,6 +12,15 @@ export const database = (method, path, body) => (
         {},
         ...Object.entries(fields).map(field => ({ [field[0]]: Object.values(field[1])[0] })),
       )))
+      .catch(err => reject(err))
+  ))
+);
+
+export const storage = (bucket, path) => (
+  new Promise((resolve, reject) => (
+    firebase.app().storage(`gs://entrylevel-${bucket}`).ref().child(path)
+      .getDownloadURL()
+      .then(url => resolve(url))
       .catch(err => reject(err))
   ))
 );

@@ -1,9 +1,46 @@
+.MapContainer {
+  padding-bottom: 3em;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  width: 60vw;
+  height: 400px;
+}
+
 .Map {
   max-width: 60vw;
-  max-height: 30vh;
-  padding-bottom: 3em;
+  max-height: 300px;
   margin: 0 auto;
   overflow: hidden;
   right: 0;
   left: 0;
+}
+
+.MapContainer .info {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-top: 12em;
+}
+
+.MapContainer .info * {
+  z-index: 1;
+}
+
+.MapContainer .info .column {
+  margin: 2em 0 0 0.3em;
+}
+
+.MapContainer .info img {
+  padding: 0.5em;
+  background-color: white;
+  border: 1px solid rgba(150, 150, 150, 0.2);
+  border-radius: 0.5em;
+  width: 10em;
+  height: 10em;
+  position: static;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+.MapContainer .info h2 {
+  margin-bottom: 0.1em;
 }

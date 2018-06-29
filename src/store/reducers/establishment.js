@@ -1,7 +1,10 @@
 import { LOAD_ESTABLISHMENT } from '../actionTypes';
 
 const defaultState = {
-  name: String(), address: String(), location: { lat: Number(), lng: Number() },
+  name: String(),
+  address: String(),
+  location: { lat: Number(), lng: Number() },
+  profileImage: String(),
 };
 
 const establishment = (state = defaultState, { type, establishmentData }) => {

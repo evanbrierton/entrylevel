@@ -1,6 +1,6 @@
 export const links = [
   { href: '/', text: 'Home' },
-  { href: '/review', text: 'Review' },
+  { href: '/explore', text: 'Explore' },
   { href: '/register', text: 'Register' },
 ];
 
