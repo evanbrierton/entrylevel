@@ -9,8 +9,11 @@
   max-width: 100%;
   min-height: fit-content;
   background-color: #fff;
-  z-index: 1;
   border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+.Navbar, .Navbar * {
+  z-index: 2;
 }
 
 @media screen and (max-width: 900px) {

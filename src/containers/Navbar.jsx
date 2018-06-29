@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Badges from '../components/Badges';
 import { NavForm, NavLinks } from '../components';
 
+import { navbarLinks } from '../data';
+
 import '../styles/Navbar.css';
 
 class Navbar extends Component {
@@ -26,7 +28,7 @@ class Navbar extends Component {
       style={{ boxShadow: this.state.shadow ? '0 8px 16px -2px rgba(155, 155, 155, 0.6)' : null }}
     >
       <Badges button={false} styles={{ width: '2em', height: '2em', margin: '0.2em' }} icon={false} />
-      <NavLinks />
+      <NavLinks links={navbarLinks} />
       <NavForm />
     </nav>
   );

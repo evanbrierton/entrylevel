@@ -3,7 +3,7 @@ import { LOAD_ESTABLISHMENT } from '../actionTypes';
 const defaultState = {
   name: String(),
   address: String(),
-  location: { lat: Number(), lng: Number() },
+  coordinates: { lat: Number(), lng: Number() },
   profileImage: String(),
 };
 
@@ -13,8 +13,8 @@ const establishment = (state = defaultState, { type, establishmentData }) => {
       return {
         ...state,
         ...establishmentData,
-        location: {
-          lat: establishmentData.location.latitude, lng: establishmentData.location.longitude,
+        coordinates: {
+          lat: establishmentData.coordinates.latitude, lng: establishmentData.coordinates.longitude,
         },
       };
     default:
