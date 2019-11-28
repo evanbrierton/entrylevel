@@ -16,7 +16,8 @@
     "react-router-prop-types": "^1.0.4",
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "set-value": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
